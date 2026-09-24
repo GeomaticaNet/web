@@ -1,16 +1,17 @@
 ---
+const base = import.meta.env.BASE_URL;
 const products = [
   {
     title: 'Sistema Inmobiliario',
     description: 'Plataforma web completa para inmobiliarias con catálogo de propiedades, administración, clientes, agentes, mapas interactivos y CRM integrado.',
-    image: '/images/inmo-state.png',
+    image: `${base}/images/inmo-state.png`,
     features: ['CRM Integrado', 'Mapas interactivos', 'Gestión de propiedades'],
     link: 'https://inmo-estate.vercel.app/es',
   },
   {
     title: 'GEOBOX - Agrovants',
     description: 'Sistema para gestion de agricultura de precisión mediante drones para la empresa Agrovants en Mendoza, Argentina. Modulos: Indices de Vegetación, Meteorología, Creación/Edición de poligonos de vuelos, Gestión de datos de vuelos, y mucho mas.',
-    image: '/images/geobox.png',
+    image: `${base}/images/geobox.png`,
     features: ['Gestión de capas', 'API REST nativa', 'Análisis espacial'],
     link: 'https://geobox.agrovants.com/auth/login',
   },
@@ -18,7 +19,7 @@ const products = [
 ---
 
 <section id="productos" class="relative py-24 md:py-32 bg-bg-section overflow-hidden">
-  <div class="absolute inset-0 opacity-50" style="background-image: url('/images/RELIEVE.webp'); background-size: cover; background-position: center;"></div>
+  <div class="absolute inset-0 opacity-50" style={`background-image: url('${base}/images/RELIEVE.webp'); background-size: cover; background-position: center;`}></div>
   <div class="relative container mx-auto px-6">
     <div class="text-center mb-16">
       <span class="text-orange font-bold text-sm tracking-widest uppercase mb-4 block">Nuestros Productos</span>
