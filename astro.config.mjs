@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://geomaticanet.github.io',
-  base: '/mainweb',
+  base: '/web',
   vite: {
     plugins: [tailwindcss()],
   },
